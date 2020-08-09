@@ -146,19 +146,24 @@ body {
 
     .column-left
     {
+        width:auto;
         text-align:center;
-        width: 500px;
         margin:0 auto;
         float: none;
         width:100%;
     }
     .column-right
     {
+        width:auto;
         text-align:center;
-        width: 500px;
         margin:0 auto;
         display:block;
         float: none;
+    }
+    .text
+    {
+        max-width: 600px;
+        padding:0px 10px 0px 10px;
     }
     .twitter
     {
