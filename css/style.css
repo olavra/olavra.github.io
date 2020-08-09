@@ -1,0 +1,171 @@
+* {
+    font-family: 'Quintessential', cursive; 
+}
+
+body {
+    background-color: #000000;
+}
+
+#container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.layer { width: 100%; }
+.layer img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.ines img {
+    margin-top: 20%;
+}
+.halo img {}
+
+.logo img { margin-top: 0; }
+
+.pitch {
+    margin-top: 600px;
+    clear: both;
+    display:block;
+}
+.copyright {
+    margin-top:100px;
+    color:#444;
+    line-height: 10px;
+    text-align: center;
+    font-size:12px;
+}
+.columns:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.column-right {
+    color: white;
+    
+    font-size: 16px;
+    float: right;
+    width: 300px;
+    text-align: right;
+    line-height: 30px;
+    text-shadow: #BA3B2A 2px 2px 5px;
+}
+
+.column-left {
+    float: left;
+    width: 300px;
+}
+
+.kickstarter {
+    margin-bottom:25px;
+}
+
+.newsletter
+{
+}
+.newsletter:after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.clear
+{
+    clear:both;
+}
+
+.newsletter button
+{
+    color: white;
+    background-color:#BA3B2A;
+    padding:0px 10px 0px 10px;
+    display:block;
+    float:left;
+    height:37px;
+    line-height: 37px;
+    border:none;
+    width:70px;
+}
+.newsletter input
+{
+    float:left;
+    display:block;
+    height: 37px;
+    padding:0px;
+    margin:0px;
+    border-width: 0px;
+    width: 220px;
+    padding-left:10px;
+    box-sizing: border-box;
+    color:#AAA; 
+}
+
+.newsletter input:focus
+{
+    color:black;    
+}
+
+.red {
+    color: #BA3B2A;
+    text-shadow: black 2px 2px 5px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1025px) {
+
+    .pitch {
+        margin-top: 72%;
+        clear: both;
+        display:block;
+    }
+
+    /* For mobile phones: */
+    #container {
+      width: 100%;
+    }
+    .newsletter
+    {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .newsletter input
+    {
+        display:inline;
+        float:none;
+        margin:0px;
+        border:none;
+        width:300px;
+    }
+    .newsletter button
+    {
+        display:inline;
+        float:none;
+    }
+
+    .column-left
+    {
+        text-align:center;
+        width: 500px;
+        margin:0 auto;
+        float: none;
+        width:100%;
+    }
+    .column-right
+    {
+        text-align:center;
+        width: 500px;
+        margin:0 auto;
+        display:block;
+        float: none;
+    }
+    .twitter
+    {
+        margin-bottom:20px;
+    }
+    .copyright
+    {
+        margin-top: 50px;
+    }
+  }

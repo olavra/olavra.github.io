@@ -1,19 +1,89 @@
-<html>
-    <head>
-        <title>Albus Merula Official Website</title>
-        <style>
-            body {background-color:#000000;}
-            .header{text-align: center; vertical-align: middle;}
-            .twitter-container{text-align: center; opacity: 0.7; animation-duration: 1s;}
-            .twitter-container:hover{opacity: 1; animation-duration: 1s;}
-        </style>
-    </head>
-    <body>
-        <div class="header">
-            <a href="http://twitter.com/albusmerula"><img src="images/header.png" width="1024"></a>
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albus Merula | A grothesque tale within walls</title>
+    <link rel="icon" href="images/icon.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="scripts/parallax.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="scene">
+            <div class="layer background" data-depth="0.60"><img src="images/Background.png" width="60%"></div>
+            <div class="layer halo" data-depth="0.30"><img src="images/HaloT.png" width="80%"></div>
+            <div class="layer ines" data-depth="0.10"><img src="images/Ines.png" width="70%"></div>
+            <div class="layer logo" data-depth="0.0"><img src="images/Logo2.png" width="65%"></div>
+            <!--content-->
+            <div class="layer pitch" data-depth="0">
+                <div class="column-right">
+                    <p>
+                        <b class="red">Albus Merula</b> is a classic point-and-click graphic adventure, set in a
+                        16th
+                        century Spanish convent, in
+                        which you play the role of <b class="red">Ines Blanco</b>, a newly arrived novice who will
+                        have to investigate the sudden suicide of her best friend.
+                    </p>
+                </div>
+                <div class="columns">
+                    <div class="column-left">
+                        <div class="kickstarter">
+                            <b class="red">Soon on</b>
+                            <img src="images/kickstarter.png" width="350">
+                        </div>
+                        <div class="newsletter">
+                            <b class="red">Subscribe to the newsletter</b>
+                            <form method="get">
+                                <input type="text" name="email" value="email address" id="newsletter-input">
+                                <button>Submit</button>
+                            </form>
+                        </div>
+                        <div class="steam">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column-right twitter">
+                        <a href="http://twitter.com/albusmerula"><img src="images/twitter.png"></a>
+                    </div>
+                    <div class="column-left">
+                        <a href="#"><img src="images/steam.png"></a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p><b>Created by Alvaro Luque © 2020</b></p>
+                    <p>Albus Merula and Albus Merula: Preluto © Haunted Knights</p>
+                    <p>All rights reserved | Albus Merula, the game, the franchise and its derivatives, is licensed by
+                        and belongs to Haunted Knights S.L.</p>
+                    <p>Developed by Haunted Knights | Haunted Knights os a registered trademark of Haunted Knights S.L.
+                    </p>
+                </div>
+
+            </div>
+
         </div>
-        <div class="twitter-container">
-            <a href="https://twitter.com/AlbusMerula?ref_src=twsrc%5Etfw"><img src="images/twitter.png"></a>
-        </div>
-    </body>
+    </div>
+
+    <script>
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene, {
+            relativeInput: true,
+            clipRelativeInput: true,
+            hoverOnly: false,
+            pointerEvents: true,
+        });
+
+        var formInput = document.getElementById("newsletter-input");
+        formInput.onfocus = function () {
+            this.setAttribute("value", "");
+        }
+    </script>
+</body>
+
 </html>
