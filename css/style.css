@@ -1,70 +1,86 @@
-* {
+* 
+{
     font-family: 'Quintessential', cursive; 
 }
-
-body {
+body 
+{
     background-color: #000000;
 }
-
-#container {
+#container 
+{
     width: 1000px;
     margin: 0 auto;
 }
 
-.layer { width: 100%; }
-.layer img {
+.layer 
+{ 
+    width: 100%; 
+}
+.layer img 
+{
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
-.ines img {
+.ines img 
+{
     margin-top: 20%;
 }
 .halo img {}
 
-.logo img { margin-top: 0; }
+.logo img 
+{ 
+    margin-top: 0; 
+}
 
-.pitch {
+.pitch 
+{
     margin-top: 600px;
     clear: both;
     display:block;
 }
-.copyright {
+.copyright 
+{
     margin-top:100px;
     color:#444;
     line-height: 10px;
     text-align: center;
     font-size:12px;
 }
-.columns:after {
+.columns:after 
+{
     content: "";
     clear: both;
     display: table;
 }
-.column-right {
+.column-right 
+{
     color: white;
     
     font-size: 16px;
     float: right;
-    width: 300px;
+    width: 350px;
     text-align: right;
     line-height: 30px;
     text-shadow: #BA3B2A 2px 2px 5px;
 }
 
-.column-left {
+.column-left 
+{
     float: left;
-    width: 300px;
+    width: 350px;
 }
 
-.kickstarter {
+.kickstarter 
+{
     margin-bottom:25px;
 }
 
 .newsletter
 {
 }
-.newsletter:after
+
+.cleara:after
 {
     content: "";
     clear: both;
@@ -76,7 +92,7 @@ body {
     clear:both;
 }
 
-.newsletter button
+.newsletter .button
 {
     color: white;
     background-color:#BA3B2A;
@@ -96,7 +112,7 @@ body {
     padding:0px;
     margin:0px;
     border-width: 0px;
-    width: 220px;
+    width: 280px;
     padding-left:10px;
     box-sizing: border-box;
     color:#AAA; 
@@ -138,7 +154,7 @@ body {
         border:none;
         width:300px;
     }
-    .newsletter button
+    .newsletter .button
     {
         display:inline;
         float:none;

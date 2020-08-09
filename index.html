@@ -14,10 +14,10 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112182550-2"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-112182550-2');
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-112182550-2');
     </script>
 </head>
 
@@ -30,31 +30,46 @@
             <div class="layer logo" data-depth="0.0"><img src="images/Logo2.png" width="65%"></div>
             <!--content-->
             <div class="layer pitch" data-depth="0">
-                <div class="column-right text">
-                    <p>
-                        <b class="red">Albus Merula</b> is a classic point-and-click graphic adventure, set in a
-                        16th
-                        century Spanish convent, in
-                        which you play the role of <b class="red">Ines Blanco</b>, a newly arrived novice who will
-                        have to investigate the sudden suicide of her best friend.
-                    </p>
-                </div>
                 <div class="columns">
+                    <div class="column-right text">
+                        <p>
+                            <b class="red">Albus Merula</b> is a classic point-and-click graphic adventure, set in a
+                            16th
+                            century Spanish convent, in
+                            which you play the role of <b class="red">Ines Blanco</b>, a newly arrived novice who will
+                            have to investigate the sudden suicide of her best friend.
+                        </p>
+                    </div>
                     <div class="column-left">
                         <div class="kickstarter">
                             <b class="red">Soon on</b>
                             <img src="images/kickstarter.png" width="350">
                         </div>
-                        <div class="newsletter">
+                        <!-- Begin Mailchimp Signup Form -->
+                        <div id="mc_embed_signup" class="newsletter">
                             <b class="red">Subscribe to the newsletter</b>
-                            <form method="get">
-                                <input type="text" name="email" value="email address" id="newsletter-input">
-                                <button>Submit</button>
+                            <form
+                                action="https://albusmerula.us17.list-manage.com/subscribe/post?u=957a2acc1d848fb58f8f2229d&amp;id=4b85105cd5"
+                                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                                class="validate" target="_blank" novalidate id="newsletter-form">
+                                <div id="mc_embed_signup_scroll">
+                                    <div class="mc-field-group">
+                                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                                        <input type="submit" value="Subscribe" name="subscribe"
+                                            id="mc-embedded-subscribe" class="button">
+                                    </div>
+                                    <div id="mce-responses" class="clear">
+                                        <div class="response" id="mce-error-response" style="display:none"></div>
+                                        <div class="response" id="mce-success-response" style="display:none"></div>
+                                    </div>
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                        <input type="text" name="b_957a2acc1d848fb58f8f2229d_4b85105cd5" tabindex="-1"
+                                            value="">
+                                    </div>
+                                </div>
                             </form>
                         </div>
-                        <div class="steam">
-
-                        </div>
+                        <!--End mc_embed_signup-->
                     </div>
                 </div>
                 <div class="columns">
@@ -68,28 +83,27 @@
                 <div class="copyright">
                     <p><b>Created by Alvaro Luque © 2020</b></p>
                     <p>Albus Merula and Albus Merula: Preluto © Haunted Knights</p>
-                    <p>All rights reserved | Albus Merula, the game, the franchise and its derivatives, is licensed by
+                    <p>All rights reserved | Albus Merula, the game, the franchise and its derivatives, is licensed
+                        by
                         and belongs to Haunted Knights S.L.</p>
-                    <p>Developed by Haunted Knights | Haunted Knights os a registered trademark of Haunted Knights S.L.
+                    <p>Developed by Haunted Knights | Haunted Knights os a registered trademark of Haunted Knights
+                        S.L.
                     </p>
                 </div>
-
             </div>
-
         </div>
-    </div>
 
-    <script>
-        var scene = document.getElementById('scene');
-        var parallax = new Parallax(scene, {
-            pointerEvents: true,
-        });
+        <script>
+            var scene = document.getElementById('scene');
+            var parallax = new Parallax(scene, {
+                pointerEvents: true,
+            });
 
-        var formInput = document.getElementById("newsletter-input");
-        formInput.onfocus = function () {
-            this.setAttribute("value", "");
-        }
-    </script>
+            var formInput = document.getElementById("newsletter-input");
+            formInput.onfocus = function () {
+                this.setAttribute("value", "");
+            }
+        </script>
 </body>
 
 </html>
